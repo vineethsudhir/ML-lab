@@ -14,6 +14,7 @@ def localWeight(point,xmat,ymat,k):
     wei = kernel(point,xmat,k)
     W = (X.T*(wei*X)).I*(X.T*(wei*ymat.T))
     return W
+
 def localWeightRegression(xmat,ymat,k):
     m,n = np.shape(xmat)
     ypred = np.zeros(m)
