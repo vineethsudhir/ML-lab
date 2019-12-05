@@ -16,7 +16,7 @@ def learn(concepts,target):
                 for x in range(len(specific_h)):
                     if h[x]!=specific_h[x]:
                         general_h[x][x]=specific_h[x]
-            else:
+                    else:
                         general_h[x][x]="?"
         indices=[i for i,val in enumerate(general_h)if val==['?','?','?','?','?','?']]
         for i in indices:
