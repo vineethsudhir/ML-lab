@@ -24,9 +24,7 @@ def separateByClass(dataset):
         if(vector[-1] not in separated):
             separated[vector[-1]]=[]
         separated[vector[-1]].append(vector)
-
     return separated
-
 
 def mean(numbers):
     return sum(numbers)/float(len(numbers))
