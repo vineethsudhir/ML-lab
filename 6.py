@@ -1,11 +1,11 @@
 import pandas as pd
 
-msg=pd.read_csv('pg6.csv',names=['message','label'])
+msg = pd.read_csv('pg6.csv',names = ['message','label'])
 print('The dimensions of the dataset',msg.shape)
 
-msg['labelnum']=msg.label.map({'pos':1,'neg':0})
-X=msg.message
-y=msg.labelnum
+msg['labelnum'] = msg.label.map({'pos':1,'neg':0})
+X = msg.message
+y = msg.labelnum
 print(X)
 print(y)
 
